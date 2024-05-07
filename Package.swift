@@ -16,12 +16,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-                    name: "NMapsMap",
-                    path: "Resources/NMapsMap.xcframework"
+            name: "NMapsMap",
+            path: "Resources/NMapsMap.xcframework"
         ),
         .binaryTarget(
             name: "NMapsGeometry",
-            path: "https://github.com/delight010/NMapsGeometry-SPM/releases/download/v1.0.2/NMapsGeometry.xcframework.zip"
+            url: "https://github.com/delight010/NMapsGeometry-SPM/releases/download/v1.0.2/NMapsGeometry.xcframework.zip",
+            checksum: "e899b67360b5366a42ebb253615cb45b5d050a323099fdc95329bfe2fd5e6547"
         )
     ]
 )
